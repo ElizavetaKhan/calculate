@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор</title>
+	<link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+	<table class="calculator">
+		<tr>
+			<td colspan="4">
+				<input id="input" type="number" value="0" disabled>
+			</td>
+		</tr>
+		<tr>
+			<td id="ers" class="btn spec" onclick="erase()">C</td>
+			<td id="bsp" class="btn spec" onclick="backspace()"><</td>
+			<td></td>
+			<td id="a0" class="btn act" onclick="inp_act('/')">/</td>
+		</tr>
+		<tr>
+			<td id="7" class="btn num" onclick="inp_num(7)">7</td>
+			<td id="8" class="btn num" onclick="inp_num(8)">8</td>
+			<td id="9" class="btn num" onclick="inp_num(9)">9</td>
+			<td id="a1" class="btn act" onclick="inp_act('*')">*</td>
+		</tr>
+		<tr>
+			<td id="4" class="btn num" onclick="inp_num(4)">4</td>
+			<td id="5" class="btn num" onclick="inp_num(5)">5</td>
+			<td id="6" class="btn num" onclick="inp_num(6)">6</td>
+			<td id="a2" class="btn act" onclick="inp_act('-')">-</td>
+		</tr>
+		<tr>
+			<td id="1" class="btn num" onclick="inp_num(1)">1</td>
+			<td id="2" class="btn num" onclick="inp_num(2)">2</td>
+			<td id="3" class="btn num" onclick="inp_num(3)">3</td>
+			<td id="a3" class="btn act" onclick="inp_act('+')">+</td>
+		</tr>
+		<tr>
+			<td id="0" class="btn num" colspan="3" onclick="inp_num(0)">0</td>
+			<td id="res" class="btn act" onclick="result()">=</td>
+		</tr>
+	</table>
+	
+</body>
+</html>			
